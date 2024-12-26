@@ -11,6 +11,8 @@ pipeline {
             steps {
                 // Runs a shell command and echoes a message
                 sh 'ls -a'
+                sh 'echo "THESE FILES CHANGED'
+                sh 'bash db-migration.sh'
             }
         }
         stage('BUILDING') {
