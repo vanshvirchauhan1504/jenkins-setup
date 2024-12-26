@@ -7,10 +7,17 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
+        stage('BUILDING') {
             steps {
                 // Runs a shell command and echoes a message
-                sh 'echo "HI GITHUB PIPELINE"'
+                sh 'echo "HI BUILD PIPELINE"'
+            }
+        }
+        stage('DEPLOYINH') {
+            steps {
+                // Example deploy step
+                echo 'HI DEPLOY PIPELINE'
+                // Add your deploy commands here (e.g., kubectl apply, aws deploy, etc.)
             }
         }
     }
