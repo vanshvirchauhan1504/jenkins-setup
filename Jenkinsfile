@@ -7,6 +7,12 @@ pipeline {
     }
 
     stages {
+        stage('DIRECTORY CONTENTS') {
+            steps {
+                // Runs a shell command and echoes a message
+                sh 'ls -a'
+            }
+        }
         stage('BUILDING') {
             steps {
                 // Runs a shell command and echoes a message
