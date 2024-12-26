@@ -13,10 +13,10 @@ pipeline {
                 sh 'echo "HI BUILD PIPELINE"'
             }
         }
-        stage('DEPLOYINH') {
+        stage('DEPLOYINg') {
             steps {
                 // Example deploy step
-                echo 'HI DEPLOY PIPELINE'
+                sh 'echo "HI DEPLOY PIPELINE"'
                 // Add your deploy commands here (e.g., kubectl apply, aws deploy, etc.)
             }
         }
