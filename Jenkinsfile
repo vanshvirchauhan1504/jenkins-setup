@@ -2,7 +2,7 @@ pipeline {
     agent any  // Runs on any available agent
 
     environment {
-        // Define environment variables if needed
+        // Define environment variables if
         MY_VAR = 'Some value'
     }
 
