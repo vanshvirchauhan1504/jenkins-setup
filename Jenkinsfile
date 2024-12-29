@@ -17,7 +17,7 @@ pipeline {
         }
         stage('BUILDING') {
             steps {
-                // Runs a shell command and echoes a message
+                // Runs a shell command and echoes
                 sh 'echo "HI BUILD PIPELINE"'
             }
         }
