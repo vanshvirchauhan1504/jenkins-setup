@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('DIRECTORY CONTENTS') {
             steps {
-                // Runs a shell command and echoes a message
+                // Runs a shell command and echoes
                 sh 'ls -a'
                 sh 'echo "THESE FILES CHANGED"'
                 sh 'bash db-migration.sh'
